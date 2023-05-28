@@ -7,7 +7,7 @@ url = input("Enter the YouTube URL: ")
 
 isPlaylist = "playlist?" in url
 
-# Check if the URL is for a playlist
+# Check if the URL is for a playlist and download
 if isPlaylist:
     # Create a Playlist object
     playlist = pytube.Playlist(url)
